@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice sur les positions CSS</title>
+    <style>
+        /* Global body style */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 1. En-tête fixe */
+        .header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        /* 2. Contenu principal avec assez de hauteur pour faire défiler */
+        .content {
+            margin-top: 80px; /* Pour éviter que le contenu ne soit caché sous l'en-tête */
+            height: 1500px; /* Simule un contenu long */
+        }
+
+        /* 3. Bloc avec position relative */
+        .relative-box {
+            width: 200px;
+            height: 100px;
+            background-color: #28a745;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: relative;
+            top: 30px;
+            left: 50px;
+        }
+
+        /* 4. Bloc avec position absolute */
+        .absolute-box {
+            width: 200px;
+            height: 100px;
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+            top: 200px;
+            right: 50px;
+        }
+
+        /* 5. Bloc avec position fixed */
+        .fixed-box {
+            width: 200px;
+            height: 100px;
+            background-color: #ffc107;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- En-tête fixe -->
+    <div class="header">
+        En-tête Fixe
+    </div>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
+        </p>
+
+        <p>
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam erat volutpat. Nulla facilisi. Integer lacinia sollicitudin massa. Cras metus. Sed aliquet risus a tortor. Integer id quam. Maecenas fermentum consequat mi. Donec fermentum.
+        </p>
+
+        <!-- Bloc avec position relative -->
+        <div class="relative-box">
+            Bloc avec position relative
+        </div>
+
+        <!-- Bloc avec position absolute -->
+        <div class="absolute-box">
+            Bloc avec position absolute
+        </div>
+
+        <!-- Bloc avec position fixed -->
+        <div class="fixed-box">
+            Bloc avec position fixed
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positionnement</title>
+  <style>
+    .container {
+      position: relative;
+      background-color: lightblue;
+      width: 300px;
+      height: 200px;
+      margin-top: 50px;
+    }
+
+    .relative-box {
+      position: relative;
+      top: 20px;
+      left: 50px;
+      background-color: #4CAF50;
+      padding: 10px;
+      color: white;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+      color: white;
+    }
+
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #f44336;
+      padding: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="relative-box">Box avec position relative</div>
+    <div class="absolute-box">Box avec position absolute</div>
+  </div>
+
+  <div class="fixed-box">Box avec position fixed</div>
+
+</body>
+</html>
